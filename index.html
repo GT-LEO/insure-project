@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+	html{
+		box-sizing: border-box;
+	}	
+	*::before,
+	*::after{
+		box-sizing: border-box;
+	}
+	body{
+		width: 100vw;
+		height: 100vh;
+		overflow-x: hidden;
+	}
+
+	
+	header{
+		display: flex;
+		gap: 45%;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 5%;
+		height: 12%;
+		width: 100%;
+	}
+
+
+.change-color{
+   	background:#96a9c7;
+   	position: fixed;
+   	margin-top: -2%;
+   	
+   }
+
+
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	/*display: none;*/
+}
+.item,.item4{
+	font-size: 0.8rem;
+padding: 0.5rem;
+background: #f00;
+margin-top: 0.5rem;
+display: inline-block;
+}
+.toggle{
+position: relative;	
+}
+.items a{
+color: #fff;
+
+}
+.ex{
+	display:  none;
+}
+.menu{
+margin-left: 20vw;
+height: 1rem;
+width: 1rem;
+	
+}
+#items{
+	
+}
+ .menu img{
+ height: 1.5rem;
+width: 1.5rem;
+margin-bottom: 10%;	
+ }
+.sect1{
+	background: #2a2340;
+	margin:0;
+	height: 70vh;
+	padding-bottom: 10%;
+	}
+	.p1, .p2, .view{
+		padding-left: 5%;
+	padding-right: 5%;
+		text-align: center;
+color: #fff;
+	}
+	.view{
+		margin-top: 10vh;
+
+	}
+	.view a{
+		color: #fff;
+		border: 2px solid #fff;
+		padding: 0.5rem;
+	}
+	.p1{
+		margin-top:-5%;
+	}
+	.p1{
+		font-size: 1.7rem;
+	}
+	 .p2{
+		font-size: 15px;
+		line-height: 20px;
+		letter-spacing: 1px;
+	}
+.mobile{
+	width: 100vw;
+	height: 100%;
+}
+.stripe2{
+	margin-left: 80%;
+}
+aside{
+	text-align: center;
+}
+.fig p{
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	opacity: 85%;
+}
+.fig{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+h3{
+font-size: 1.7rem;
+font-weight: 700;
+}
+.tag{
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.line{
+	width: 24%;
+	height: 3px;
+	background:#bf86c3 ;
+	margin-left:38% ;
+	margin-top: 15vh;
+}
+.sect2{
+	width: 94vw;
+	background:#2a2340 ;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	display: flex;
+	padding-left: 10vw;
+}
+.find-out{
+font-size: 1.7rem;
+color: #fff;
+font-weight: 700;
+margin-top: 20vh;
+}
+.how{
+	text-align: center;
+	margin-top: 10vh;
+}
+.how a{
+	color: #fff;
+	font-weight: 500;
+	border: 2px solid #fff;
+	padding:0.5rem;
+	display: inline-block;
+
+}
+.stripe3{
+	width: 30vw;
+}
+#view:hover, .how:hover{
+   	background:#96a9c7;
+
+}
+.items li:hover{
+	background: #383;
+}
+.how{
+	display: inline-block;
+	margin-left: 30%;
+}
+
+
+
+
+
+
+
+@media(max-width:721px){
+
+}
+
+
+
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+
+<header>
+	<div class="logo">
+		<img src="./images/logo.svg" class="image1">
+	</div>
+
+<nav class="toggle">
+
+	 <a href="#" class="menu">
+ 	    <img src="./images/icon-close.svg" class="ex">
+		        <img src="./images/icon-hamburger.svg" class="hamburg">
+	                 </a>   
+	 
+
+
+
+                                    <ul class="items" id="items">
+
+	<li class="item">
+		<a href="">HOW WE WORK</a>
+	</li>
+	<br>
+	                   <li class="item">
+	       	                 <a href="">BLOG</a>
+	                   </li>
+	                   <br>
+<li class="item">
+<a href="">ACCOUNT</a>		
+</li>
+<br>
+	                  <li class="item4">
+	       	           <a href="">VIEW PLANS</a>
+	                 </li>
+
+</ul>
+
+                                
+           
+</nav>
+
+                
+
+</header>
+
+
+
+
+<main>
+
+<div class="mobile-image-container">
+<img src="./images/image-intro-mobile.jpg" class="mobile">
+</div>
+
+
+	<section class="sect1">
+	<img src="./images/bg-pattern-intro-left-mobile.svg" class="stripe1">	
+<p class="p1">
+Humanizing <br> your insurance.	
+</p>
+<p class="p2">
+Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.	
+</p>
+<p>
+	<div class="view">
+<a href="" id="view">
+	VIEW PLANS
+</a>
+	</div>
+	<img src="./images/bg-pattern-intro-right-mobile.svg" class="stripe2">
+</p>
+
+	</section>
+
+
+                 <aside class="aside">
+	
+<div class="line"></div>
+<h3>
+	We're different
+</h3>
+
+<figure class="fig">
+	         <img src="./images/icon-snappy-process.svg" class="pictorial">
+<h4 class="tag">
+	Snappy Process
+</h4>
+
+         <p class="explain">
+	Our application process can be completed in minutes, not hours. Don't get stuck filling in tedious forms.
+        </p>
+
+</figure>
+
+            <figure class="fig">
+	         <img src="./images/icon-affordable-prices.svg" class="pictorial">
+<h4 class="tag">
+Affordable Prices	
+</h4>
+
+         <p class="explain">
+	We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.
+        </p>
+
+</figure>
+
+
+                <figure class="fig">
+	         <img src="./images/icon-people-first.svg" class="pictorial">
+<h4 class="tag">
+	People First
+</h4>
+
+         <p class="explain">
+	Our plans aren't full of conditions and clauses to prevent payouts. We make sure you're covered when you need it.
+        </p>
+
+</figure>
+
+
+                </aside>
+
+
+
+<section class="sect2">
+	<div>
+	<p class="find-out">
+		Find out more about how we work
+	</p>
+
+<div class="how">
+	<a href="">HOW WE WORK</a>
+</div>
+       
+       </div>
+
+ <img src="./images/bg-pattern-how-we-work-mobile.svg" class="stripe3">
+
+</section>
+
+
+
+</main>
+
+
+
+
+<footer>
+
+<div class="media-container">
+	<img src="./images/" class="insure2">
+
+	<div>
+	<img src="./images/" class="media">
+	<img src="./images/" class="media">
+	<img src="./images/" class="media">
+	<img src="./images/" class="media">
+	</div>
+</div>	
+
+<div class="links-container">
+	
+<div class="links">
+	<a href="#" class="link1">OUR COMPANY</a> <br>
+	<a href="" class="link">HOW WE WORK</a> <br>
+	<a href="" class="link">WHY WE INSURE?</a> <br>
+	<a href="" class="link">VIEW PLANS</a> <br>
+	<a href="" class="link">REVIEWS</a> <br>
+</div>
+
+<div class="links">
+	<a href="#" class="link1">HELP ME</a> <br>
+	<a href="" class="link">FAQ</a> <br>
+	<a href="" class="link">TERMS OF USE</a> <br>
+	<a href="" class="link">PRIVACY POLICY</a> <br>
+	<a href="" class="link">COOKIES</a> <br>
+</div>
+
+<div class="links">
+	<a href="#" class="link1">CONTACT</a> <br>
+	<a href="" class="link">SALES</a> <br>
+	<a href="" class="link">SUPPORT</a> <br>
+	<a href="" class="link">LIVE CHAT</a> <br>
+</div>
+
+<div class="links">
+	<a href="#" class="link1">OTHERS</a> <br>
+	<a href="" class="link">CAREERS</a> <br>
+	<a href="" class="link">PRESS</a> <br>
+	<a href="" class="link">LICENSES</a> <br>
+</div>
+
+</div>
+
+
+</footer>
+
+
+<script>
+	
+
+let hamburg = document.querySelector(".hamburg");
+let ex = document.querySelector(".ex");
+let items = document.querySelector(".items");
+
+hamburg.addEventListener("click", onClickButton);
+function onClickButton(e) {
+	// body...
+}{
+  items.classList.toggle('active');
+//ex.classList.toggle('active');
+//hamburg.classList.toggle('inactive');
+};
+
+//ex.addEventListener('click', function(event)){
+//hamburg.classList.toggle('active');
+//ex.classList.toggle('inactive');
+
+//}
+
+/* button.addEventListener("click",shuffleEvent);
+ function shuffleEvent(e){
+  	const bank =shuffleBank(banks);
+  	display.innerText = bank;
+  } 
+
+
+
+  */
+
+
+
+
+const headerElement =  document.querySelector("header");
+window.addEventListener("scroll",function(e){
+ // console.log(e)
+	if(window.scrollY > 70){
+     headerElement.classList.add("change-color");
+	}
+	else{
+	headerElement.classList.remove("change-color")
+	}
+	
+})
+
+</script>
+
+</body>
+</html>
