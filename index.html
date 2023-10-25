@@ -13,15 +13,16 @@
 		box-sizing: border-box;
 	}
 	body{
-		width: 100vw;
-		height: 100vh;
 		overflow-x: hidden;
 	}
-
+.parent{
+	width: inherit;
+	padding-bottom: 20%;
+}
 	
 	header{
 		display: flex;
-		gap: 45%;
+		gap: 65%;
 		padding-left: 5%;
 		padding-right: 5%;
 		padding-top: 5%;
@@ -48,7 +49,7 @@ li{
 ul{
 	padding: 0;
 	margin: 0;
-	/*display: none;*/
+	position: relative;
 }
 .item,.item4{
 	font-size: 0.8rem;
@@ -58,25 +59,23 @@ margin-top: 0.5rem;
 display: inline-block;
 }
 .toggle{
-position: relative;	
+position: absolute;
+display: none;
+margin-left:-20vw ;	
 }
 .items a{
 color: #fff;
 
 }
-.ex{
-	display:  none;
-}
+
 .menu{
 margin-left: 20vw;
 height: 1rem;
 width: 1rem;
 	
 }
-#items{
-	
-}
- .menu img{
+
+ .nav-container label{
  height: 1.5rem;
 width: 1.5rem;
 margin-bottom: 10%;	
@@ -86,6 +85,7 @@ margin-bottom: 10%;
 	margin:0;
 	height: 70vh;
 	padding-bottom: 10%;
+	width: 100vw;
 	}
 	.p1, .p2, .view{
 		padding-left: 5%;
@@ -118,10 +118,12 @@ color: #fff;
 	height: 100%;
 }
 .stripe2{
+	content: url(./images/bg-pattern-intro-right-mobile.svg);
 	margin-left: 80%;
 }
 aside{
 	text-align: center;
+
 }
 .fig p{
 	font-size: 15px;
@@ -148,23 +150,26 @@ font-weight: 700;
 	margin-left:38% ;
 	margin-top: 15vh;
 }
-.sect2{
-	width: 94vw;
+.sect2-child{
+	width: 100vw;
 	background:#2a2340 ;
-	margin-left: 3vw;
-	margin-right: 3vw;
 	display: flex;
+	gap: 5%;
 	padding-left: 10vw;
+	padding-bottom: 4%;
 }
+
 .find-out{
 font-size: 1.7rem;
 color: #fff;
 font-weight: 700;
 margin-top: 20vh;
+
 }
 .how{
+	display: inline-block;
 	text-align: center;
-	margin-top: 10vh;
+	margin-top: 20vh;
 }
 .how a{
 	color: #fff;
@@ -172,34 +177,314 @@ margin-top: 20vh;
 	border: 2px solid #fff;
 	padding:0.5rem;
 	display: inline-block;
+	white-space: nowrap;
 
 }
 .stripe3{
 	width: 30vw;
 }
-#view:hover, .how:hover{
-   	background:#96a9c7;
-
+#view:hover, .how a:hover{
+   	background:#f00;
 }
+
 .items li:hover{
 	background: #383;
 }
-.how{
+
+
+
+input{
+	display: none;
+		}
+label:before{
+			content:url("./images/icon-hamburger.svg");
+			cursor: pointer;
+		}
+.nav-container input:checked ~ .toggle{
+			display: block;
+		}
+		.nav-container input:checked + label::before{
+			content:url("./images/icon-close.svg");
+
+		}
+.media3{
+	height: 1.6rem;
+	width: 1.6rem;
+}
+.media-container{
+	text-align: center;
+	background: url(./images/bg-pattern-footer-mobile.svg);
+	margin-top: 15%;
+	padding-top:12%;
+	padding-bottom:6%;	
+}
+.open-border{
+	background:#aaa;
+	height: 2px;
+	width: 90%;
+	margin: 0 auto;
+}
+.media-icons{
+	margin-top: 6%;
+}
+.media-icons a{
+	margin-left: 3%;
+}
+.links{
+	text-align: center;
+	margin-top: 7%;
+}
+.links a{
 	display: inline-block;
-	margin-left: 30%;
+	margin-top: 2%;
+	color: #000;
+}
+.links .link1{
+color: #666;
+cursor: default;
+}
+.link:hover{
+border-bottom:1px solid #000;
+}
+.horisontal{
+display: none;	
 }
 
 
 
 
 
-
-
-@media(max-width:721px){
-
+@media(max-width:565px){
+header{
+	display: flex;
+	gap: 45%;
 }
 
 
+
+}
+
+@media(min-width:821px){
+
+input, label{
+	display: none;
+}
+.toggle{
+	display: block;
+}
+.item,.item4{
+margin-top: -0.5rem;
+}
+.items{
+	display: flex;
+	white-space: nowrap;
+gap: 5%;
+}
+header{
+	width: 100vw;
+	display: flex;
+	gap: 40%;
+}
+.items a, .items li{
+	background: initial;
+	color: #000;
+}
+.items li:hover a{
+	color: #fff;
+}
+.sect1{
+	display: flex;
+	gap: 2%;
+	padding-top: 5%;
+}
+
+.mobile-image-container{
+display: none;
+}
+.desktop-image{
+	content:url(./images/image-intro-desktop.jpg);
+	margin-top: -45%;
+	height: 70vh;
+	width: 40vw;
+	margin-left: 50vw;
+}
+.stripe1{
+	display: none;
+}
+.stripe1-replace{
+	content:url(./images/bg-pattern-intro-left-desktop.svg);
+}
+.stripe2{
+	content: url(./images/bg-pattern-intro-right-desktop.svg);
+	height: 50vh;
+	width: 25vw;
+	margin-left: -20%;
+	margin-top:-3% ;
+
+}
+.human-aligner{
+	padding-left: 5%;
+	margin-left: -20%;
+	margin-right: 56%;
+	margin-top: 15%;
+}
+.horisontal{
+display: block;
+height: 2px;
+width: 10vw;
+margin-bottom: 15%;
+background: #96a9c7;	
+}
+.f{
+display: flex;
+gap: 2%;
+margin-bottom: 10%;
+}
+
+figure, .explain{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.aside{
+	padding-right: 5%;
+	padding-left: 5%;
+}
+ .sp{
+ 	display: block;
+ 	margin-right: 70%;
+ }
+.sect2-child-flexer{
+   display: flex;
+   gap: 4%;
+white-space: nowrap;
+align-items:center;
+justify-content: space-between;
+margin-left: 0;
+
+
+}
+.how{
+	margin-left: 0;
+white-space: nowrap;
+}
+.stripe3{
+	display: none;
+}
+.desk{
+	content: url(./images/bg-pattern-how-we-work-desktop.svg);
+}
+.media-container{
+	display: flex;
+	white-space: nowrap;
+	gap: 68%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background: #fff;
+}
+.back{
+	background: url(./images/bg-pattern-footer-desktop.svg);
+}
+.insure2{
+	padding:0;
+	margin-bottom:-50%;
+}
+.links-container{
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 15%;
+	gap: 13%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.link1{
+margin-bottom: 25%;
+}
+.link{
+margin-bottom: 10%;
+}
+
+
+
+
+}
+
+@media(min-width:961px){
+header{
+	width: 100vw;
+	display: flex;
+	gap: 50%;
+}
+.media-container{
+	display: flex;
+	white-space: nowrap;
+	gap: 72%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background: #fff;
+}
+
+.links-container{
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 15%;
+	gap: 15%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+}
+
+@media(min-width:1071px){
+.aside{
+	margin-top: 15%;
+}
+.media-container{
+	display: flex;
+	white-space: nowrap;
+	gap: 74%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background: #fff;
+}
+.links-container{
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 15%;
+	gap: 18%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+}
+
+@media(min-width:1121px){
+.items{
+	display: flex;
+	white-space: nowrap;
+gap: 10%;
+}
+
+.media-container{
+	display: flex;
+	white-space: nowrap;
+	gap: 77%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background: #fff;
+}
+
+.links-container{
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 15%;
+	gap: 20%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+}
 
 
 	</style>
@@ -207,29 +492,34 @@ margin-top: 20vh;
 </head>
 <body>
 
+
+<div class="parent">
+
 <header>
 	<div class="logo">
 		<img src="./images/logo.svg" class="image1">
 	</div>
 
+	<div class="nav-container">
+
+	
+	 	<input type="checkbox" id="checkbox">
+	 	<label for="checkbox" class="lab"></label>
+	                  
+ 	   
+
+
+ 	  
 <nav class="toggle">
-
-	 <a href="#" class="menu">
- 	    <img src="./images/icon-close.svg" class="ex">
-		        <img src="./images/icon-hamburger.svg" class="hamburg">
-	                 </a>   
 	 
-
-
-
-                                    <ul class="items" id="items">
+                                   <ul class="items" id="items">
 
 	<li class="item">
 		<a href="">HOW WE WORK</a>
 	</li>
 	<br>
 	                   <li class="item">
-	       	                 <a href="">BLOG</a>
+	       	                 <a href="https://www.facebook.com/profile.php?id=61550058058534&mibextid=ZbWKwL">BLOG</a>
 	                   </li>
 	                   <br>
 <li class="item">
@@ -246,7 +536,7 @@ margin-top: 20vh;
            
 </nav>
 
-                
+</div>                
 
 </header>
 
@@ -261,7 +551,12 @@ margin-top: 20vh;
 
 
 	<section class="sect1">
-	<img src="./images/bg-pattern-intro-left-mobile.svg" class="stripe1">	
+
+	<img src="./images/bg-pattern-intro-left-mobile.svg" class="stripe1">
+	<div class="stripe1-replace">  </div>
+
+<div class="human-aligner">
+	<hr class="horisontal">
 <p class="p1">
 Humanizing <br> your insurance.	
 </p>
@@ -269,33 +564,39 @@ Humanizing <br> your insurance.
 Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.	
 </p>
 <p>
-	<div class="view">
-<a href="" id="view">
-	VIEW PLANS
-</a>
-	</div>
-	<img src="./images/bg-pattern-intro-right-mobile.svg" class="stripe2">
+	       <div class="view">
+       <a href="" id="view">
+	     VIEW PLANS
+        </a>
+	      </div>
+
+</div>
+<div class="stripe2"></div>
+	<!-- <img src="./images/bg-pattern-intro-right-mobile.svg" class="stripe2"> -->
 </p>
 
 	</section>
+		<div class="desktop-image">   </div>
+
 
 
                  <aside class="aside">
-	
+	<span class="sp">
 <div class="line"></div>
 <h3>
 	We're different
 </h3>
-
+</span>
+<div class="f">
 <figure class="fig">
 	         <img src="./images/icon-snappy-process.svg" class="pictorial">
 <h4 class="tag">
 	Snappy Process
 </h4>
 
-         <p class="explain">
+         <div class="explain">
 	Our application process can be completed in minutes, not hours. Don't get stuck filling in tedious forms.
-        </p>
+        </div>
 
 </figure>
 
@@ -305,9 +606,9 @@ Get your life insurance coverage easier and faster. We blend our expertise and t
 Affordable Prices	
 </h4>
 
-         <p class="explain">
+         <div class="explain">
 	We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.
-        </p>
+        </div>
 
 </figure>
 
@@ -318,31 +619,34 @@ Affordable Prices
 	People First
 </h4>
 
-         <p class="explain">
+         <div class="explain">
 	Our plans aren't full of conditions and clauses to prevent payouts. We make sure you're covered when you need it.
-        </p>
+        </div>
 
 </figure>
 
-
+</div>
                 </aside>
 
 
 
 <section class="sect2">
-	<div>
-	<p class="find-out">
+	<div class="sect2-child">
+
+	<div class="sect2-child-flexer">
+	<div class="find-out">
 		Find out more about how we work
-	</p>
+	</div>
 
 <div class="how">
 	<a href="">HOW WE WORK</a>
 </div>
        
        </div>
-
- <img src="./images/bg-pattern-how-we-work-mobile.svg" class="stripe3">
-
+<div class="desk">
+  <img src="./images/bg-pattern-how-we-work-mobile.svg" class="stripe3"> 
+</div>
+</div>
 </section>
 
 
@@ -355,15 +659,28 @@ Affordable Prices
 <footer>
 
 <div class="media-container">
-	<img src="./images/" class="insure2">
+	
+	<div class="back">
+	<img src="./images/logo.svg" class="insure2">
+</div>
 
-	<div>
-	<img src="./images/" class="media">
-	<img src="./images/" class="media">
-	<img src="./images/" class="media">
-	<img src="./images/" class="media">
+	<div class="media-icons">
+	<a href="https://www.facebook.com/profile.php?id=61550058058534&mibextid=ZbWKwL">
+	<img src="./images/icon-facebook.svg" class="media">
+	</a>
+	<a href="https://twitter.com/Leogerald14?t=M-eiwypthyjan0SOyogTw&s=09">
+	<img src="./images/icon-twitter.svg" class="media">
+	</a>
+	<a href="https://wa.me/+2348147383504">
+	<img src="./images/whatsapp-svgrepo-com.svg" class="media3">
+	</a>
+	<a href="https://www.Instagram.com/Onahgeraldleo">
+	<img src="./images/icon-instagram.svg" class="media">	
+	</a>
 	</div>
-</div>	
+</div>
+
+<div class="open-border"></div>	
 
 <div class="links-container">
 	
@@ -384,7 +701,7 @@ Affordable Prices
 </div>
 
 <div class="links">
-	<a href="#" class="link1">CONTACT</a> <br>
+	<a href="tel:+2348147383504" class="link1">CONTACT</a> <br>
 	<a href="" class="link">SALES</a> <br>
 	<a href="" class="link">SUPPORT</a> <br>
 	<a href="" class="link">LIVE CHAT</a> <br>
@@ -393,7 +710,7 @@ Affordable Prices
 <div class="links">
 	<a href="#" class="link1">OTHERS</a> <br>
 	<a href="" class="link">CAREERS</a> <br>
-	<a href="" class="link">PRESS</a> <br>
+	<a href="https://www.facebook.com/profile.php?id=61550058058534&mibextid=ZbWKwL" class="link">PRESS</a> <br>
 	<a href="" class="link">LICENSES</a> <br>
 </div>
 
@@ -402,55 +719,10 @@ Affordable Prices
 
 </footer>
 
-
-<script>
-	
-
-let hamburg = document.querySelector(".hamburg");
-let ex = document.querySelector(".ex");
-let items = document.querySelector(".items");
-
-hamburg.addEventListener("click", onClickButton);
-function onClickButton(e) {
-	// body...
-}{
-  items.classList.toggle('active');
-//ex.classList.toggle('active');
-//hamburg.classList.toggle('inactive');
-};
-
-//ex.addEventListener('click', function(event)){
-//hamburg.classList.toggle('active');
-//ex.classList.toggle('inactive');
-
-//}
-
-/* button.addEventListener("click",shuffleEvent);
- function shuffleEvent(e){
-  	const bank =shuffleBank(banks);
-  	display.innerText = bank;
-  } 
+<script src="./js/index.js"></script>
 
 
-
-  */
-
-
-
-
-const headerElement =  document.querySelector("header");
-window.addEventListener("scroll",function(e){
- // console.log(e)
-	if(window.scrollY > 70){
-     headerElement.classList.add("change-color");
-	}
-	else{
-	headerElement.classList.remove("change-color")
-	}
-	
-})
-
-</script>
+</div>
 
 </body>
 </html>
