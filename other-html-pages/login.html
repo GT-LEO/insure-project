@@ -1,0 +1,151 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+	html, *, *::before, *::after{
+			box-sizing: border-box;
+		}
+		body{
+overflow-x: hidden;
+background: bisque;
+		}
+.parent{
+	padding: 2rem;
+	padding-top: 0;
+}
+header a{
+	text-decoration: none;
+	color: ghostwhite;
+	background: red;
+	font-size: 1.3rem;
+	font-weight: 600;
+	padding: 0.3rem;
+}
+header{
+	display: flex;
+	gap: 10%;
+	width: 100vw;
+	padding: 1rem;
+	align-items: center;
+	margin-top: 0;
+	margin-bottom: 5%;
+
+}
+h3{
+	margin: 0;
+}
+.divider{
+	margin-bottom: 4%;
+}
+
+form{
+	box-shadow: 0.1rem 0.1rem 4px 1px;
+	padding: 2rem;
+	width: 70%;
+}
+input{
+	width: 40%;
+}
+button{
+	padding: 0.5rem;
+	border-radius: 0.8rem;
+	color: white;
+	background: blue;
+	cursor: pointer;
+}
+button:hover{
+	background: darkgreen;
+}
+	
+
+
+
+
+
+@media(min-width:280px){
+	header{
+		gap: 22%;
+	}
+}
+
+@media(min-width:300px){
+	header{
+		gap: 25%;
+	}
+}
+
+@media(min-width:365px){
+	header{
+		gap: 45%;
+	}
+}
+@media(min-width:421px){
+	header{
+		gap: 55%;
+	}
+}
+@media(min-width:551px){
+	header{
+		gap: 67%;
+	}
+}
+@media(min-width:690px){
+	header{
+		gap: 72%;
+	}
+}
+@media(min-width:780px){
+	header{
+		gap: 77%;
+	}
+}
+@media(min-width:1006px){
+	header{
+		gap: 83%;
+	}
+	</style>
+</head>
+<body>
+<div class="parent">
+
+<header>
+	<h3>LOGIN</h3>
+	<a href="./account.html">&#x2715;</a>
+</header>	
+
+<main>
+	<form>
+		
+<div class="divider">
+		<label>
+			Email/Phone-Number
+		</label>
+	<input type="text" class="input" placeholder="email/phone" required>
+</div>
+
+<div class="divider">
+		<label>
+			Password
+		</label>
+	<input type="" class="input" placeholder="password" name="" required>
+</div>
+
+
+
+
+
+<button>Login</button>
+
+	</form>
+</main>
+
+<footer>
+	
+
+</footer>
+</div>
+
+</body>
+</html>

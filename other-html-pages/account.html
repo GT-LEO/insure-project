@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		html, *, *::before, *::after{
+			box-sizing: border-box;
+		}
+		body{
+overflow-x: hidden;
+background: antiquewhite;
+		}
+.parent{
+	padding: 2rem;
+	padding-top: 0;
+}
+header a{
+	text-decoration: none;
+	color: ghostwhite;
+	background: red;
+	font-size: 1.3rem;
+	font-weight: 600;
+	padding: 0.3rem;
+}
+header{
+	display: flex;
+	gap: 1px;
+	width: 100vw;
+	padding: 1rem;
+	align-items: center;
+	margin-top: 0;
+	margin-bottom: 5%;
+}
+h3{
+	margin: 0;
+}
+.divider{
+	margin-bottom: 4%;
+}
+form{
+	box-shadow: 0.1rem 0.1rem 4px 1px;
+	padding: 2rem;
+	width: 70%;
+}
+input{
+	width: 40%;
+}
+button{
+	padding: 0.5rem;
+	border-radius: 0.8rem;
+	color: white;
+	background: blue;
+	cursor: pointer;
+}
+button:hover{
+	background: darkgreen;
+}
+section a{
+	font-weight: 600;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: darkorange;
+}
+section a:hover{
+	border-bottom: 1px solid darkgreen;
+	color: darkgreen;
+	padding-bottom: 0;
+}
+section{
+	display: flex;
+	gap: 5%;
+	align-items: center;
+	padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:300px){
+	header{
+		gap: 14%;
+	}
+}
+
+@media(min-width:365px){
+	header{
+		gap: 35%;
+	}
+}
+@media(min-width:421px){
+	header{
+		gap: 45%;
+	}
+}
+@media(min-width:551px){
+	header{
+		gap: 55%;
+	}
+}
+@media(min-width:690px){
+	header{
+		gap: 62%;
+	}
+}
+@media(min-width:780px){
+	header{
+		gap: 63%;
+	}
+}
+@media(min-width:1006px){
+	header{
+		gap: 75%;
+	}
+
+	</style>
+</head>
+<body>
+<div class="parent">
+
+<header>
+	<h3>CREATE ACCOUNT</h3>
+	<a href="../index.html">&#x2715;</a>
+</header>	
+
+<main>
+	<form>
+<div class="divider">
+		<label for="First Name">
+			First Name
+		</label>
+	<input type="" class="input" name="" placeholder="first name" required>
+</div>
+
+<div class="divider">
+		<label for="Surname">
+			Surname
+		</label>
+	<input type="" class="input" name="" placeholder="Surname" required>
+</div>
+
+<div class="divider">
+		<label for="email">
+			Email
+		</label>
+	<input type="email" class="input" placeholder="email" name="" required>
+</div>
+
+<div class="divider">
+		<label for="Phone Number">
+			Phone Number
+		</label>
+	<input type="" class="input" name="" placeholder="phone number" required>
+</div>
+
+<div class="divider">
+		<label for="Password">
+			Password
+		</label>
+	<input type="password" class="input" placeholder="password" name="" required>
+</div>
+
+<div class="divider">
+		<label for="Password">
+			Password
+		</label>
+	<input type="password" class="input" placeholder="password" name="" required>
+</div>
+
+
+
+<button>Submit</button>
+	</form>
+
+	<section>
+		<p>Already have an account?</p>
+		<a href="./login.html" class="sign-in">Sign in</a>
+	</section>
+</main>
+
+<footer>
+	
+
+</footer>
+</div>
+
+</body>
+</html>
